@@ -9,8 +9,7 @@ jobs:
       - image: circleci/node:11.9.0-stretch
     working_directory: ~/repo
     steps:
-      - printenv
-      - run: git submodule update -i
+      - run: printenv
 
 workflows:
     version: 2
